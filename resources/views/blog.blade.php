@@ -44,7 +44,7 @@
                     <div class="card">
                         <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.3)"><a href="/blog?category={{ $post->category->slug }}" class="text-white text-decoration-none">{{ $post->category->name }}</a></div>
                         @if($post->image)
-                        <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid">
+                        <img src="{{ asset('storage/app/public/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid">
                         @else
                         <img src="https://source.unsplash.com/500x300?{{ $post->category->name }}" class="card-img-top" alt="{{ $post->category->name }}">
                         @endif
